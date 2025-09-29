@@ -1,0 +1,96 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+  <header>
+  <h1 id="title">Digital Product Usability and Satisfaction</h1>
+  <p id="description">
+  We value yoour insights as we continuously work to improve our digital tools. This short, anonymous survey is designed to gather your honest feedback on the usability, performance, and overall satisfaction with your recent experience using our application. Your responses will directly inform our developmentpriorities and helpus refine features to better meet your neds, ensuring a smoother and more effective user experience for everyone.It should take less than three minutes to complete.  
+  </p>
+  </header>
+
+  <main>
+<form id="survey-form">
+<fieldset>
+<legend><strong>Personal Information</strong></legend>
+<label id="name-label">Full Name</label>
+<input required type="text" id="name" Placeholder="Timothy Udoh"></br></br>
+
+<label id="email-label">Email</label>
+<input required type="email" id="email" placeholder="email@email.com"></br></br>
+<label id="number-label">Age</lable>
+<input required type="number" id="number" placeholder="10years" min="3" max="100"></br>
+</fieldset></br>
+
+<fieldset>
+<legend><strong>User Profile</strong></legend>
+<label for="user-profile">How often do you typically use our product?</label>
+<select id=dropdown>
+<option value="" disabled selected>Select frequency</option>
+<option value="daily">Daily or Multiple Times a Week</option>
+<option value="weekly">Once a week</option>
+<option value="monthly">Once a month or less</option>
+</select>
+</fieldset></br>
+
+<fieldset>
+<legend><strong>Usability Experience</strong></legend>
+<p>How easy was it to find the feature or complete the task you were trying to accomplish?</p>
+<label>
+<input type="radio" name="task_ease" value="very_easy" required> Very Easy (No issues finding it)
+</label></br>
+
+<label>
+<input type="radio" name="task_ease" value="easy" required>Easy (Minor searching required)
+</label></br>
+
+<label>
+<input type="radio" name="task_ease" value="moderate" required>Moderate (Took some time and effort)
+</label>
+</fieldset></br>
+
+<fieldset>
+<legend><strong>Areas of Improvement</strong></legend>
+<p>Which of the following aspects,if any, caused you the most frustration during your session? <strong>(Select all that apply)</strong></p>
+
+<label>
+<input type="checkbox" name="frustration_areas" value="load_times">Slow loading or response times
+</label></br>
+
+<label>
+<input type="checkbox" name="frustration_areas" value="confusing_nav">Confusing navigation or menu layout
+</label></br>
+
+<label>
+<input type="checkbox" name="frustration_areas" value="broken_features">Bugs or broken features/links
+</label></br>
+
+<label>
+<input type="checkbox" name="frustration_areas" value="lack_info">Lack of clear instructions or help documentation
+</label>
+</fieldset></br>
+
+<fieldset>
+<legend><strong>Open feedback and suggestions</strong></legend>
+<label>Please describe the most significant challenge or positive experience you had today, or suggest one major improvement.</label></br></br>
+<textarea id="detailed_feedback" name="detailed_feedback" rows="7" cols="43" placeholder="E.g., 'The feature X was very helpful because.....' or 'I struggled with the checkout process, the button was hard to find.'">
+</textarea>
+</fieldset></br>
+
+
+<button id="submit">Submit</button>
+
+</form>
+  </main>
+
+  </body>
+</html>
+
+** end of index.html **
+
